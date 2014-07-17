@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Jalka loos </h1>
+
+<p> Vali mangijad</p>
+
+
+<form method="post">
+
+
+<table>
+
+{% for nimi in nimed %}
+
+<tr>
+<td><input type="checkbox" name= {{nimi}} value= {{nimi}} >{{nimi}}</td> 
+</tr>
+
+{% endfor %}
+
+</table>
+
+<input type="submit">
+
+
+
+
+</body>
+</html>
